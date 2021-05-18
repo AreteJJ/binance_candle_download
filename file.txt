@@ -1,3 +1,2 @@
 pole
 hello
-alla
