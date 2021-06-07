@@ -56,7 +56,7 @@ def price_get():
                 pday = day
             return True
         except Exception:
-            if len(df.iloc[:,0]) < 300:
+            if len(df.iloc[:,0]) > 300:
                 count+=1
                 df.to_csv(f"BROKEN{count}_binance_info_{pday[-1]}.{pday[-2]}.{pday[0]}.csv")
                 True
